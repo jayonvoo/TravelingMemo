@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20594BA8EFE59F00CCEF934 /* libPods-TravelingMemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */; };
 		FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690802085A39300F1BF69 /* AppDelegate.swift */; };
 		FC2690832085A39300F1BF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690822085A39300F1BF69 /* ViewController.swift */; };
 		FC2690862085A39400F1BF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2690842085A39400F1BF69 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		635313802E08F17167CC7466 /* Pods-TravelingMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.release.xcconfig"; sourceTree = "<group>"; };
+		7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelingMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55158F242C06DB19C1CFB99 /* Pods-TravelingMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC26907D2085A39300F1BF69 /* TravelingMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelingMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2690802085A39300F1BF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2690822085A39300F1BF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20594BA8EFE59F00CCEF934 /* libPods-TravelingMemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E5B753C7A057B1788E2A85D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D55158F242C06DB19C1CFB99 /* Pods-TravelingMemo.debug.xcconfig */,
+				635313802E08F17167CC7466 /* Pods-TravelingMemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81554E4B71059AE0D3E1D5F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC2690742085A39300F1BF69 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				FC2690942085A39900F1BF69 /* TravelingMemoTests */,
 				FC26909F2085A39900F1BF69 /* TravelingMemoUITests */,
 				FC26907E2085A39300F1BF69 /* Products */,
+				6E5B753C7A057B1788E2A85D /* Pods */,
+				81554E4B71059AE0D3E1D5F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC2690A52085A39900F1BF69 /* Build configuration list for PBXNativeTarget "TravelingMemo" */;
 			buildPhases = (
+				71C94092415776D1F83975B7 /* [CP] Check Pods Manifest.lock */,
 				FC2690792085A39300F1BF69 /* Sources */,
 				FC26907A2085A39300F1BF69 /* Frameworks */,
 				FC26907B2085A39300F1BF69 /* Resources */,
+				1F6E64C0AE133EC2AE19FBB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F6E64C0AE133EC2AE19FBB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71C94092415776D1F83975B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelingMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC2690792085A39300F1BF69 /* Sources */ = {
@@ -428,14 +495,12 @@
 		};
 		FC2690A62085A39900F1BF69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55158F242C06DB19C1CFB99 /* Pods-TravelingMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravelingMemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -445,14 +510,12 @@
 		};
 		FC2690A72085A39900F1BF69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635313802E08F17167CC7466 /* Pods-TravelingMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravelingMemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -467,11 +530,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravelingMemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -487,11 +546,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravelingMemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,11 +561,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravelingMemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -525,11 +576,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravelingMemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
