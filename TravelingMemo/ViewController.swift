@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
     override func viewDidLoad() {
@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         marker.map = mapView
         marker.title = "住家"
         marker.snippet = "台灣"
+        
+        mapView.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,7 +32,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //隱藏頂上狀態列
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        performSegue(withIdentifier: "showPano", sender: nil)
+        //print("clicked")
     }
 }
