@@ -11,6 +11,11 @@ import GoogleMaps
 
 class ViewController: UIViewController, GMSMapViewDelegate {
     
+    var locationName = ["Hawaii", "Mountain", "Scuba"]
+    var locationPic = ["lake", "rainbow", "river"]
+    
+    var locationImage = ["UNIQLO"]
+    
     @IBOutlet weak var mapView: GMSMapView!
     override func viewDidLoad() {
         super.viewDidLoad()

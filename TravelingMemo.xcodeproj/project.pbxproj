@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B20594BA8EFE59F00CCEF934 /* libPods-TravelingMemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */; };
+		FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1D2928208849E60046845A /* CollectionViewCell.swift */; };
 		FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690802085A39300F1BF69 /* AppDelegate.swift */; };
 		FC2690832085A39300F1BF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690822085A39300F1BF69 /* ViewController.swift */; };
 		FC2690862085A39400F1BF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2690842085A39400F1BF69 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		635313802E08F17167CC7466 /* Pods-TravelingMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.release.xcconfig"; sourceTree = "<group>"; };
 		7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelingMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55158F242C06DB19C1CFB99 /* Pods-TravelingMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FC1D2928208849E60046845A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FC26907D2085A39300F1BF69 /* TravelingMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelingMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2690802085A39300F1BF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2690822085A39300F1BF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				FC2690802085A39300F1BF69 /* AppDelegate.swift */,
 				FC2690822085A39300F1BF69 /* ViewController.swift */,
 				FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */,
+				FC1D2928208849E60046845A /* CollectionViewCell.swift */,
 				FC2690842085A39400F1BF69 /* Main.storyboard */,
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
@@ -328,6 +331,7 @@
 			files = (
 				FC2690832085A39300F1BF69 /* ViewController.swift in Sources */,
 				FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */,
+				FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */,
 				FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
