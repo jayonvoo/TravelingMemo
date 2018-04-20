@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l6J-dE-vco">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vug-cC-n6C">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelingMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="TravelingMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,24 +34,25 @@
                     </view>
                     <navigationItem key="navigationItem" id="rbc-eF-3fy"/>
                     <connections>
-                        <outlet property="mapView" destination="7xv-va-Qyj" id="yQM-HL-x7p"/>
+                        <outlet property="mapView" destination="7xv-va-Qyj" id="DnO-2k-wbK"/>
                         <segue destination="faE-CS-0TA" kind="show" identifier="showPano" id="y41-cV-OLM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2055.1999999999998" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Memo Trips-->
         <scene sceneID="KqI-6t-jXR">
             <objects>
-                <viewController id="l6J-dE-vco" customClass="ViewController" customModule="TravelingMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KE6-mR-cO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Memo Trips" id="l6J-dE-vco" customClass="ViewController" customModule="TravelingMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Gg-Dh-QAu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pAI-NW-nUq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="565"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ddx-vR-jq6">
                                     <size key="itemSize" width="349" height="250"/>
@@ -100,20 +101,31 @@
                                     <outlet property="delegate" destination="l6J-dE-vco" id="Jdp-Dl-uQA"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjM-1n-zzi">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <state key="normal" title="Go to Google Map"/>
+                                <connections>
+                                    <action selector="btn2mapAction:" destination="l6J-dE-vco" eventType="touchUpInside" id="bvu-R7-m4E"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="btn2mapLink" id="rKP-09-kJr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xIz-Yl-tsm" firstAttribute="trailing" secondItem="rjM-1n-zzi" secondAttribute="trailing" id="2La-hc-LVa"/>
                             <constraint firstItem="pAI-NW-nUq" firstAttribute="leading" secondItem="xIz-Yl-tsm" secondAttribute="leading" id="Foh-cC-SbN"/>
                             <constraint firstItem="pAI-NW-nUq" firstAttribute="top" secondItem="xIz-Yl-tsm" secondAttribute="top" id="HpR-DH-AkX"/>
-                            <constraint firstItem="pAI-NW-nUq" firstAttribute="bottom" secondItem="xIz-Yl-tsm" secondAttribute="bottom" id="KRQ-UG-1IJ"/>
+                            <constraint firstItem="pAI-NW-nUq" firstAttribute="bottom" secondItem="xIz-Yl-tsm" secondAttribute="bottom" constant="-38" id="KRQ-UG-1IJ"/>
+                            <constraint firstItem="rjM-1n-zzi" firstAttribute="leading" secondItem="xIz-Yl-tsm" secondAttribute="leading" id="PQg-pn-nQz"/>
                             <constraint firstItem="pAI-NW-nUq" firstAttribute="trailing" secondItem="xIz-Yl-tsm" secondAttribute="trailing" id="bqb-uP-Aoi"/>
+                            <constraint firstItem="rjM-1n-zzi" firstAttribute="bottom" secondItem="xIz-Yl-tsm" secondAttribute="bottom" id="bzv-ZJ-hTK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xIz-Yl-tsm"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Memo Trips" id="mZf-np-44o"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KE6-mR-cO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752.79999999999995" y="862.21889055472275"/>
+            <point key="canvasLocation" x="1207.2" y="126.38680659670166"/>
         </scene>
         <!--Pano View Controller-->
         <scene sceneID="fCr-NG-Gp2">
@@ -143,25 +155,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzA-dp-upy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2844" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="EfQ-NS-iuE">
+        <scene sceneID="Lby-WI-GYA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gxO-xg-Jue" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="Vug-cC-n6C" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wpS-bp-FKV">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rTV-bA-iKb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5mC-Ry-wVi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w2O-Qo-efT"/>
+                        <segue destination="l6J-dE-vco" kind="relationship" relationship="rootViewController" id="2TL-2d-j32"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oea-eu-qpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLQ-8o-aGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="134"/>
+            <point key="canvasLocation" x="268" y="126.38680659670166"/>
         </scene>
     </scenes>
 </document>

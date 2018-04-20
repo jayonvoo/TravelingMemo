@@ -17,6 +17,7 @@
 		FC2690962085A39900F1BF69 /* TravelingMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690952085A39900F1BF69 /* TravelingMemoTests.swift */; };
 		FC2690A12085A39900F1BF69 /* TravelingMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */; };
 		FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */; };
+		FCDB071920899613001EA211 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDB071820899613001EA211 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelingMemoUITests.swift; sourceTree = "<group>"; };
 		FC2690A22085A39900F1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoViewController.swift; sourceTree = "<group>"; };
+		FCDB071820899613001EA211 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				FC2690822085A39300F1BF69 /* ViewController.swift */,
 				FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */,
 				FC1D2928208849E60046845A /* CollectionViewCell.swift */,
+				FCDB071820899613001EA211 /* MapViewController.swift */,
 				FC2690842085A39400F1BF69 /* Main.storyboard */,
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
@@ -332,6 +335,7 @@
 				FC2690832085A39300F1BF69 /* ViewController.swift in Sources */,
 				FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */,
 				FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */,
+				FCDB071920899613001EA211 /* MapViewController.swift in Sources */,
 				FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
