@@ -20,7 +20,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
     
     @IBAction func btn2mapAction(_ sender: AnyObject) {
         
-        performSegue(withIdentifier: "btn2mapLink", sender: self)
+        performSegue(withIdentifier: "btn2mapLink", sender: nil)
         
     }
     override func viewDidLoad() {

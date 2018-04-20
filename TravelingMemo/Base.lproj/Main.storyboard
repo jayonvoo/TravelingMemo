@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2055.1999999999998" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2062" y="126"/>
         </scene>
         <!--Memo Trips-->
         <scene sceneID="KqI-6t-jXR">
@@ -155,12 +155,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzA-dp-upy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2844" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2908" y="126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lby-WI-GYA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="Vug-cC-n6C" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vug-cC-n6C" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rTV-bA-iKb">

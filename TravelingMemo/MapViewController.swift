@@ -40,6 +40,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         performSegue(withIdentifier: "showPano", sender: nil)
         //print("clicked")
     }
+    
     /*
     //隱藏頂上狀態列
     override var prefersStatusBarHidden: Bool {
