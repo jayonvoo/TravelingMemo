@@ -38,7 +38,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         performSegue(withIdentifier: "showPano", sender: nil)
-        //print("clicked")
     }
     
     /*
