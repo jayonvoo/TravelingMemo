@@ -46,7 +46,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
         
         marker.map = mapView
-        
+        marker.title = "經緯度"
+        marker.snippet = "緯度: \(coordinate.latitude)\n經度: \(coordinate.longitude)"
         mapView.delegate = self
         
     }

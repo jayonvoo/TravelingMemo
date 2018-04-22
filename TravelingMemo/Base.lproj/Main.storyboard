@@ -101,7 +101,8 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjM-1n-zzi">
-                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="629" width="375" height="38"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Go to Google Map"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="btn2mapLink" id="rKP-09-kJr"/>
@@ -117,6 +118,7 @@
                             <constraint firstItem="rjM-1n-zzi" firstAttribute="leading" secondItem="xIz-Yl-tsm" secondAttribute="leading" id="PQg-pn-nQz"/>
                             <constraint firstItem="pAI-NW-nUq" firstAttribute="trailing" secondItem="xIz-Yl-tsm" secondAttribute="trailing" id="bqb-uP-Aoi"/>
                             <constraint firstItem="rjM-1n-zzi" firstAttribute="bottom" secondItem="xIz-Yl-tsm" secondAttribute="bottom" id="bzv-ZJ-hTK"/>
+                            <constraint firstItem="rjM-1n-zzi" firstAttribute="top" secondItem="pAI-NW-nUq" secondAttribute="bottom" id="y9Z-0S-I0Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xIz-Yl-tsm"/>
                     </view>
@@ -139,7 +141,43 @@
                     <view key="view" contentMode="scaleToFill" id="Jzl-sy-hJH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sb8-Me-YWX">
+                                <rect key="frame" x="0.0" y="111" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-Aa-L1r">
+                                <rect key="frame" x="16" y="73" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IN7-BA-We2">
+                                <rect key="frame" x="45" y="253" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPm-an-Gtm">
+                                <rect key="frame" x="340" y="115" width="25" height="22"/>
+                                <state key="normal" image="Image"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KWl-Gd-0nP" firstAttribute="trailing" secondItem="vVy-Aa-L1r" secondAttribute="trailing" constant="326" id="4nJ-Wi-mHd"/>
+                            <constraint firstItem="Sb8-Me-YWX" firstAttribute="top" secondItem="vVy-Aa-L1r" secondAttribute="bottom" constant="17" id="Adm-ne-Cog"/>
+                            <constraint firstItem="QPm-an-Gtm" firstAttribute="leading" secondItem="KWl-Gd-0nP" secondAttribute="leading" constant="340" id="cQr-Ez-g5h"/>
+                            <constraint firstItem="Sb8-Me-YWX" firstAttribute="leading" secondItem="KWl-Gd-0nP" secondAttribute="leading" id="gwX-Za-GMi"/>
+                            <constraint firstItem="QPm-an-Gtm" firstAttribute="centerY" secondItem="Sb8-Me-YWX" secondAttribute="centerY" id="iyc-ln-OHg"/>
+                            <constraint firstItem="vVy-Aa-L1r" firstAttribute="top" secondItem="KWl-Gd-0nP" secondAttribute="top" constant="9" id="oZ6-T4-4ZB"/>
+                            <constraint firstItem="vVy-Aa-L1r" firstAttribute="leading" secondItem="KWl-Gd-0nP" secondAttribute="leading" constant="16" id="sv9-yI-FdU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KWl-Gd-0nP"/>
                     </view>
                 </viewController>
@@ -180,7 +218,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Lby-WI-GYA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RLQ-8o-aGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vug-cC-n6C" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -196,8 +233,12 @@
                         <segue destination="l6J-dE-vco" kind="relationship" relationship="rootViewController" id="2TL-2d-j32"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLQ-8o-aGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="268" y="126.38680659670166"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="25" height="19"/>
+    </resources>
 </document>
