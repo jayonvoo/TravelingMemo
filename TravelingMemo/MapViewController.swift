@@ -40,11 +40,22 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         performSegue(withIdentifier: "showPano", sender: nil)
     }
     
+    func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        
+        marker.map = mapView
+        
+        mapView.delegate = self
+        
+    }
+    
     /*
-    //隱藏頂上狀態列
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }*/
+     //隱藏頂上狀態列
+     override var prefersStatusBarHidden: Bool {
+     return true
+     }*/
     
     /*
      // MARK: - Navigation

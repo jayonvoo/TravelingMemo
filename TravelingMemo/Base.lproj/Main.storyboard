@@ -45,7 +45,6 @@
         <!--Memo Trips-->
         <scene sceneID="KqI-6t-jXR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KE6-mR-cO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Memo Trips" id="l6J-dE-vco" customClass="ViewController" customModule="TravelingMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Gg-Dh-QAu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -105,7 +104,6 @@
                                 <rect key="frame" x="0.0" y="637" width="375" height="30"/>
                                 <state key="normal" title="Go to Google Map"/>
                                 <connections>
-                                    <action selector="btn2mapAction:" destination="l6J-dE-vco" eventType="touchUpInside" id="bvu-R7-m4E"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="btn2mapLink" id="rKP-09-kJr"/>
                                 </connections>
                             </button>
@@ -122,10 +120,32 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xIz-Yl-tsm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Memo Trips" id="mZf-np-44o"/>
+                    <navigationItem key="navigationItem" title="Memo Trips" id="mZf-np-44o">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="3gb-5J-7Lc">
+                            <connections>
+                                <segue destination="P0l-UY-AyT" kind="show" id="xnB-8b-0GT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KE6-mR-cO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1207.2" y="126.38680659670166"/>
+        </scene>
+        <!--Compose View Controller-->
+        <scene sceneID="kgT-A0-QJK">
+            <objects>
+                <viewController id="P0l-UY-AyT" customClass="ComposeViewController" customModule="TravelingMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jzl-sy-hJH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KWl-Gd-0nP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78h-6t-0eZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.5999999999999" y="890.10494752623697"/>
         </scene>
         <!--Pano View Controller-->
         <scene sceneID="fCr-NG-Gp2">
@@ -160,6 +180,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Lby-WI-GYA">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLQ-8o-aGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vug-cC-n6C" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -175,7 +196,6 @@
                         <segue destination="l6J-dE-vco" kind="relationship" relationship="rootViewController" id="2TL-2d-j32"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RLQ-8o-aGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="268" y="126.38680659670166"/>
         </scene>
