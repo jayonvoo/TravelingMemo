@@ -48,6 +48,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
         
         return cell
     }
+   
     /*
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);

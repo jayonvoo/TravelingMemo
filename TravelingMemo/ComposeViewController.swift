@@ -10,6 +10,14 @@ import UIKit
 
 class ComposeViewController: UIViewController {
 
+    @IBOutlet weak var UINameText: UITextField!
+    @IBOutlet weak var UIDescText: UITextView!
+    
+    @IBAction func UICameraBtn(_ sender: UIButton) {
+        
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +27,15 @@ class ComposeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationView: ViewController = segue.destination as! ViewController
+        
+        destinationView.locationName.append(UINameText.text!)
+        destinationView.locationDescription.append(UIDescText.text)
+        destinationView.locationImage.append("Nil")
     }
     
 
