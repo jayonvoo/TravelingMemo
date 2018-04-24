@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B20594BA8EFE59F00CCEF934 /* libPods-TravelingMemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */; };
+		B58F2ECADDE045D3D363DBC0 /* Pods_TravelingMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24D2F4EB053076C41C4BB2D /* Pods_TravelingMemo.framework */; };
 		FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1D2928208849E60046845A /* CollectionViewCell.swift */; };
 		FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690802085A39300F1BF69 /* AppDelegate.swift */; };
 		FC2690832085A39300F1BF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690822085A39300F1BF69 /* ViewController.swift */; };
@@ -16,6 +16,7 @@
 		FC26908B2085A39900F1BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */; };
 		FC2690962085A39900F1BF69 /* TravelingMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690952085A39900F1BF69 /* TravelingMemoTests.swift */; };
 		FC2690A12085A39900F1BF69 /* TravelingMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */; };
+		FC48ADD4208EC7A1007CB817 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC48ADD3208EC7A1007CB817 /* GoogleService-Info.plist */; };
 		FC4D4B78208B8AFD00931742 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */; };
 		FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */; };
 		FCDB071920899613001EA211 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDB071820899613001EA211 /* MapViewController.swift */; };
@@ -40,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		635313802E08F17167CC7466 /* Pods-TravelingMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.release.xcconfig"; sourceTree = "<group>"; };
-		7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelingMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24D2F4EB053076C41C4BB2D /* Pods_TravelingMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelingMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55158F242C06DB19C1CFB99 /* Pods-TravelingMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC1D2928208849E60046845A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FC26907D2085A39300F1BF69 /* TravelingMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelingMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +57,7 @@
 		FC26909C2085A39900F1BF69 /* TravelingMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelingMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelingMemoUITests.swift; sourceTree = "<group>"; };
 		FC2690A22085A39900F1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC48ADD3208EC7A1007CB817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoViewController.swift; sourceTree = "<group>"; };
 		FCDB071820899613001EA211 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20594BA8EFE59F00CCEF934 /* libPods-TravelingMemo.a in Frameworks */,
+				B58F2ECADDE045D3D363DBC0 /* Pods_TravelingMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +101,7 @@
 		81554E4B71059AE0D3E1D5F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7BC096372B0BBDC87524DD39 /* libPods-TravelingMemo.a */,
+				A24D2F4EB053076C41C4BB2D /* Pods_TravelingMemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +141,7 @@
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
 				FC26908C2085A39900F1BF69 /* Info.plist */,
+				FC48ADD3208EC7A1007CB817 /* GoogleService-Info.plist */,
 			);
 			path = TravelingMemo;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				FC26907A2085A39300F1BF69 /* Frameworks */,
 				FC26907B2085A39300F1BF69 /* Resources */,
 				1F6E64C0AE133EC2AE19FBB1 /* [CP] Copy Pods Resources */,
+				4890C7683FF19A966358732A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC26908B2085A39900F1BF69 /* LaunchScreen.storyboard in Resources */,
+				FC48ADD4208EC7A1007CB817 /* GoogleService-Info.plist in Resources */,
 				FC2690882085A39900F1BF69 /* Assets.xcassets in Resources */,
 				FC2690862085A39400F1BF69 /* Main.storyboard in Resources */,
 			);
@@ -308,6 +313,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4890C7683FF19A966358732A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71C94092415776D1F83975B7 /* [CP] Check Pods Manifest.lock */ = {

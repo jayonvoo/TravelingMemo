@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xv-va-Qyj" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pAI-NW-nUq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="609"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="565"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ddx-vR-jq6">
                                     <size key="itemSize" width="349" height="250"/>
@@ -106,7 +106,7 @@
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Go to Google Map"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="btn2mapLink" id="rKP-09-kJr"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="" id="rKP-09-kJr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,7 +126,7 @@
                     <navigationItem key="navigationItem" title="Memo Trips" id="mZf-np-44o">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="3gb-5J-7Lc">
                             <connections>
-                                <segue destination="P0l-UY-AyT" kind="show" id="xnB-8b-0GT"/>
+                                <segue destination="P0l-UY-AyT" kind="show" id="R2F-ir-09d"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -144,33 +144,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sb8-Me-YWX">
-                                <rect key="frame" x="0.0" y="67" width="332" height="30"/>
+                                <rect key="frame" x="0.0" y="111" width="332" height="30"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Scene" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-Aa-L1r">
-                                <rect key="frame" x="16" y="29" width="88" height="21"/>
+                                <rect key="frame" x="16" y="73" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IN7-BA-We2">
-                                <rect key="frame" x="0.0" y="155" width="375" height="172"/>
+                                <rect key="frame" x="0.0" y="199" width="375" height="128"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.3420109160958904" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPm-an-Gtm">
-                                <rect key="frame" x="340" y="71" width="25" height="22"/>
+                                <rect key="frame" x="340" y="115" width="25" height="22"/>
                                 <state key="normal" image="Image"/>
                                 <connections>
-                                    <action selector="UICameraBtn:" destination="P0l-UY-AyT" eventType="touchUpInside" id="zhg-HZ-aM7"/>
+                                    <action selector="UICameraBtn:" destination="P0l-UY-AyT" eventType="touchUpInside" id="Lce-qz-74K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decription:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK5-vs-oIB">
-                                <rect key="frame" x="16" y="126" width="84" height="21"/>
+                                <rect key="frame" x="16" y="170" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,7 +185,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="l6J-dE-vco" kind="show" id="NeZ-Uk-IaS"/>
+                                    <action selector="UIBackButton:" destination="P0l-UY-AyT" eventType="touchUpInside" id="uJu-UV-yax"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,9 +215,8 @@
                         <viewLayoutGuide key="safeArea" id="KWl-Gd-0nP"/>
                     </view>
                     <connections>
-                        <outlet property="UICameraBtn" destination="QPm-an-Gtm" id="LwS-ob-e9X"/>
-                        <outlet property="UIDescText" destination="IN7-BA-We2" id="cqX-gG-4ep"/>
-                        <outlet property="UINameText" destination="Sb8-Me-YWX" id="WLX-gQ-lEh"/>
+                        <outlet property="UIDescText" destination="IN7-BA-We2" id="3gu-iB-gNd"/>
+                        <outlet property="UINameText" destination="Sb8-Me-YWX" id="mic-AC-wzd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78h-6t-0eZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -233,7 +232,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWR-Kl-G3j" customClass="GMSPanoramaView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -280,7 +279,4 @@
     <resources>
         <image name="Image" width="25" height="19"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="NeZ-Uk-IaS"/>
-    </inferredMetricsTieBreakers>
 </document>
