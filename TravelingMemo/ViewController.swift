@@ -8,9 +8,11 @@
 
 import UIKit
 import GoogleMaps
+import CoreData
 
 class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    var restaurantDB:[TravelingDB] = []
     var UIimageArray = [UIImage]()
     var locationName = ["秋紅谷", "彩虹眷村", "柳川新風情"]
     var locationImage = ["lake", "rainbow", "river"]
@@ -18,13 +20,26 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
     var colloectionGlobalView: UICollectionView?
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        
+        for item in locationImage{
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            let entity = NSEntityDescription.insertNewObject(forEntityName: "TravelingDB", into: context) as! TravelingDB
+            
+            let byteData: Data = UIImagePNGRepresentation(UIImage(named: item)!)!
+            entity.locImg = byteData
+            
+            do{
+                try context.save()
+            }catch{
+                print("Failed saving")
+            }
+        }
     }
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         colloectionGlobalView?.reloadData()
     }
     
@@ -43,6 +58,21 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "TravelingDB")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                print(data.value(forKey: "locImg") as! String)
+            }
+            
+        } catch {
+            
+            print("Failed")
+        }
+        
         if UIimageArray.count != locationName.count {
             UIimageArray.append(UIImage(named: locationImage[indexPath.row])!)
         }
@@ -52,12 +82,6 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
         cell.locationDescription.text = locationDescription[indexPath.row]
         
         return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let DestViewController: ComposeViewController = segue.destination as! ComposeViewController
-        
-        DestViewController.viewImageArray = UIimageArray
     }
     
     /*

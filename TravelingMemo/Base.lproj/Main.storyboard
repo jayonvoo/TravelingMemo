@@ -185,7 +185,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="UIBackButton:" destination="P0l-UY-AyT" eventType="touchUpInside" id="uJu-UV-yax"/>
+                                    <segue destination="l6J-dE-vco" kind="show" id="6Ys-Iu-iCv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -279,4 +279,7 @@
     <resources>
         <image name="Image" width="25" height="19"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2TL-2d-j32"/>
+    </inferredMetricsTieBreakers>
 </document>

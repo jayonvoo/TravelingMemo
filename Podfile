@@ -7,4 +7,5 @@ target 'TravelingMemo' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 end

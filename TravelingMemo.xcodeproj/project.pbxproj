@@ -16,9 +16,9 @@
 		FC26908B2085A39900F1BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */; };
 		FC2690962085A39900F1BF69 /* TravelingMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690952085A39900F1BF69 /* TravelingMemoTests.swift */; };
 		FC2690A12085A39900F1BF69 /* TravelingMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */; };
-		FC48ADD4208EC7A1007CB817 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC48ADD3208EC7A1007CB817 /* GoogleService-Info.plist */; };
 		FC4D4B78208B8AFD00931742 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */; };
 		FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */; };
+		FCA00D8A208F167C00F2B734 /* ttmemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCA00D88208F167C00F2B734 /* ttmemo.xcdatamodeld */; };
 		FCDB071920899613001EA211 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDB071820899613001EA211 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,9 +57,9 @@
 		FC26909C2085A39900F1BF69 /* TravelingMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelingMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelingMemoUITests.swift; sourceTree = "<group>"; };
 		FC2690A22085A39900F1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC48ADD3208EC7A1007CB817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoViewController.swift; sourceTree = "<group>"; };
+		FCA00D89208F167C00F2B734 /* ttmemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ttmemo.xcdatamodel; sourceTree = "<group>"; };
 		FCDB071820899613001EA211 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +141,7 @@
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
 				FC26908C2085A39900F1BF69 /* Info.plist */,
-				FC48ADD3208EC7A1007CB817 /* GoogleService-Info.plist */,
+				FCA00D88208F167C00F2B734 /* ttmemo.xcdatamodeld */,
 			);
 			path = TravelingMemo;
 			sourceTree = "<group>";
@@ -272,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC26908B2085A39900F1BF69 /* LaunchScreen.storyboard in Resources */,
-				FC48ADD4208EC7A1007CB817 /* GoogleService-Info.plist in Resources */,
 				FC2690882085A39900F1BF69 /* Assets.xcassets in Resources */,
 				FC2690862085A39400F1BF69 /* Main.storyboard in Resources */,
 			);
@@ -323,11 +322,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +365,7 @@
 				FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */,
 				FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */,
 				FC4D4B78208B8AFD00931742 /* ComposeViewController.swift in Sources */,
+				FCA00D8A208F167C00F2B734 /* ttmemo.xcdatamodeld in Sources */,
 				FCDB071920899613001EA211 /* MapViewController.swift in Sources */,
 				FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */,
 			);
@@ -688,6 +690,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FCA00D88208F167C00F2B734 /* ttmemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FCA00D89208F167C00F2B734 /* ttmemo.xcdatamodel */,
+			);
+			currentVersion = FCA00D89208F167C00F2B734 /* ttmemo.xcdatamodel */;
+			path = ttmemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FC2690752085A39300F1BF69 /* Project object */;
 }

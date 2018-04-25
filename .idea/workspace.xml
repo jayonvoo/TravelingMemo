@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list id="0d1496b4-c710-4e3f-bd0e-93da326c0a53" name="Revert &quot;update 1020&quot;" comment="Revert &quot;update 1020&quot;&#10;&#10;This reverts commit a17c7a4" />
+    <list default="true" id="aa83c88d-5ea8-4ec7-9c71-e57f26f76404" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/TravelingMemo/ttmemo.xcdatamodeld/ttmemo.xcdatamodel/contents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/GoogleMapsBase" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/GoogleMapsBase" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/CHANGELOG" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/CHANGELOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Example/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Example/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/GoogleMaps" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/GoogleMaps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/GMSNavSprites-0-3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ar.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ca.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/cs.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/da.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/de.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/el.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_AU.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_AU.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_GB.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_IN.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/en_IN.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_419.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_419.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_MX.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/es_MX.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fi.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr_CA.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/fr_CA.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/he.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hi.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hi.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hr.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/hu.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/id.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/it.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/iw.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/iw.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ja.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ko.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lt.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lt.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lv.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/lv.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ms.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nb.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nb.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/nl.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/no.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pl.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture_dim.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/polyline_colors_texture_dim.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_BR.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_BR.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/pt_PT.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ro.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/ru.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sk.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/sv.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/th.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/tr.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/uk.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/vi.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_CN.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_HK.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_HK.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GMSCore.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCoreResources.bundle/zh_TW.lproj/GMSCore.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/oss_licenses_maps.txt.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/oss_licenses_maps.txt.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/GoogleMapsCore" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/GoogleMapsCore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/CHANGELOG" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/CHANGELOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Example/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Example/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/GooglePlaces" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/GooglePlaces" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lt.lproj/GooglePlaces.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lt.lproj/GooglePlaces.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lv.lproj/GooglePlaces.strings" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/lv.lproj/GooglePlaces.strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/oss_licenses_places.txt.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle/oss_licenses_places.txt.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/travelingkp.xcuserdatad/xcschemes/Pods-TravelingMemo.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/travelingkp.xcuserdatad/xcschemes/Pods-TravelingMemo.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/travelingkp.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/travelingkp.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo/ViewController.swift" afterDir="false" />
+    </list>
+    <list id="11426f54-42f1-43a1-9b78-7dc54974f24f" name="update 1249" comment="" />
+    <ignored path="$PROJECT_DIR$/../../Developer/Xcode/DerivedData/TravelingMemo-bbfitkguxxgorvhdzaagvppwnwta/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_AA2BA444-1AD6-43E2-A170-4A821E2E4946" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AppDelegate.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding>
+                <element signature="e#133#145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComposeViewController.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="21" />
+    <option name="y" value="165" />
+    <option name="width" value="1238" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="TravelingMemo" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="TravelingMemo" type="1d218c8b:XcodeProjectNode" />
+              <item name="TravelingMemo" type="fcab9f18:XcodeViewNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TravelingMemo" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TravelingMemo" TARGET_NAME="TravelingMemo" CONFIG_NAME="Debug" SCHEME_NAME="TravelingMemo" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="TravelingMemo" RUN_TARGET_NAME="TravelingMemo" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa83c88d-5ea8-4ec7-9c71-e57f26f76404" name="Default" comment="" />
+      <changelist id="11426f54-42f1-43a1-9b78-7dc54974f24f" name="update 1249" comment="" />
+      <created>1523936665113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523936665113</updated>
+      <workItem from="1523936668595" duration="1541000" />
+      <workItem from="1524018093653" duration="768000" />
+      <workItem from="1524109460318" duration="3044000" />
+      <workItem from="1524211071523" duration="2639000" />
+      <workItem from="1524492496656" duration="1397000" />
+      <workItem from="1524538453213" duration="735000" />
+      <workItem from="1524539394193" duration="857000" />
+    </task>
+    <task id="LOCAL-00001" summary="update 1742">
+      <created>1524131096314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524131096314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update 1105">
+      <created>1524539167747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524539167748</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10981000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="21" y="165" width="1238" height="878" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979457" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3277849" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update 1742" />
+    <MESSAGE value="update 1105" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1105" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

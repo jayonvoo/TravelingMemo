@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol ComposeViewControllerDelegate {
-    func ComposeViewControllerDismiss(with dataForVC3: String)
-}
-
 class ComposeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     weak var firstViewItemController: ViewController?
@@ -20,21 +16,8 @@ class ComposeViewController: UIViewController, UIImagePickerControllerDelegate &
     
     @IBOutlet weak var UINameText: UITextField!
     @IBOutlet weak var UIDescText: UITextView!
-    @IBAction func UIBackButton(_ sender: UIButton){
-        if let firstViewController = self.navigationController?.viewControllers.first {
-            self.navigationController?.popToViewController(firstViewController, animated: true)
-        }
-        
-        firstViewItemController?.locationName.append(UINameText.text!)
-        firstViewItemController?.locationDescription.append(UIDescText.text)
-        if(getUIImage != nil){
-            viewImageArray.append(getUIImage!)
-        }//else viewImageArray.append(#imageLiteral(resourceName: "Image"))
-        firstViewItemController?.UIimageArray = viewImageArray
-        
-        firstViewItemController?.viewWillAppear(true)
-        
-    }
+    
+    
     @IBAction func UICameraBtn(_ sender: UIButton) {
         
         photoLibrary()
@@ -51,8 +34,8 @@ class ComposeViewController: UIViewController, UIImagePickerControllerDelegate &
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      let destinationView: ViewController = segue.destination as! ViewController
      
      destinationView.locationName.append(UINameText.text!)
