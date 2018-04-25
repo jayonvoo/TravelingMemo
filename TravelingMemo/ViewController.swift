@@ -12,30 +12,45 @@ import CoreData
 
 class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var restaurantDB:[TravelingDB] = []
+    var restaurantDB = [NSManagedObject]()
     var UIimageArray = [UIImage]()
     var locationName = ["秋紅谷", "彩虹眷村", "柳川新風情"]
     var locationImage = ["lake", "rainbow", "river"]
     var locationDescription = ["靜謐的都市綠地空間，以自然步道和充滿魚群、烏龜和鳥類的大型生態池聞名。","鄰近嶺東科技大學，是條色彩繽紛、充滿童趣彩繪的巷道。","柳川水岸目前是親水兼具防洪效果的河岸分三區栽植楓香、黃花風鈴木、欒樹等植栽~打造出全年四季不同的河岸風貌。"]
     var colloectionGlobalView: UICollectionView?
+    var isEmpty : Bool {
+        do{
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "TravelingDB")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            let count  = try context.count(for: request)
+            return count == 0 ? true : false
+        }catch{
+            return true
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for item in locationImage{
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let context = appDelegate.persistentContainer.viewContext
-            let entity = NSEntityDescription.insertNewObject(forEntityName: "TravelingDB", into: context) as! TravelingDB
-            
-            let byteData: Data = UIImagePNGRepresentation(UIImage(named: item)!)!
-            entity.locImg = byteData
-            
-            do{
-                try context.save()
-            }catch{
-                print("Failed saving")
+        if isEmpty{
+            for item in 0..<locationImage.count{
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let context = appDelegate.persistentContainer.viewContext
+                let entity = NSEntityDescription.insertNewObject(forEntityName: "TravelingDB", into: context) as! TravelingDB
+                
+                let byteData: Data = UIImagePNGRepresentation(UIImage(named: locationImage[item])!)!
+                entity.locImg = byteData
+                entity.locName = locationName[item]
+                entity.locDesc = locationDescription[item]
+                do{
+                    try context.save()
+                }catch{
+                    print("Failed saving")
+                }
             }
         }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,32 +73,42 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "TravelingDB")
-        request.returnsObjectsAsFaults = false
-        do {
-            let result = try context.fetch(request)
-            for data in result as! [NSManagedObject] {
-                print(data.value(forKey: "locImg") as! String)
+        let userFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "TravelingDB")
+        
+        do{
+            let searchResult = try getContext().fetch(userFetch)
+            
+            for p in (searchResult as! [NSManagedObject]){
+                let name =  p.value(forKey: "locName")
+                let desc = p.value(forKey: "locDesc")
+                let img = p.value(forKey: "locImg")
+                let imageUIImage: UIImage = UIImage(data: img as! Data)!
+                if(name as! String == locationName[indexPath.row]){
+                    print("name: \(name!), description: \(desc!)")
+                    
+                    cell.locationName.text = name as? String
+                    cell.locationImage.image = imageUIImage
+                    cell.locationDescription.text = desc as? String
+                }
             }
             
-        } catch {
-            
-            print("Failed")
+        }catch{
+            print("error")
         }
         
-        if UIimageArray.count != locationName.count {
-            UIimageArray.append(UIImage(named: locationImage[indexPath.row])!)
-        }
         
-        cell.locationName.text = locationName[indexPath.row]
-        cell.locationImage.image = UIimageArray[indexPath.row]
-        cell.locationDescription.text = locationDescription[indexPath.row]
         
+        /*
+         if UIimageArray.count != locationName.count {
+         UIimageArray.append(UIImage(named: locationImage[indexPath.row])!)
+         }*/
         return cell
     }
     
+    func getContext () -> NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
     /*
      override func viewWillAppear(_ animated: Bool) {
      super.viewWillAppear(animated);
