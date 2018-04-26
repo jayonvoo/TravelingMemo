@@ -12,7 +12,7 @@ import CoreData
 
 class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var restaurantDB = [NSManagedObject]()
+    var travelingDB = [NSManagedObject]()
     var UIimageArray = [UIImage]()
     var locationName = ["秋紅谷", "彩虹眷村", "柳川新風情"]
     var locationImage = ["lake", "rainbow", "river"]
@@ -54,7 +54,17 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "TravelingDB")
+        
+        do{
+            let results = try moc.fetch(fetchRequest)
+            travelingDB = results as! [NSManagedObject]
+        }catch{
+            print("\(error)")
+        }
+        
         colloectionGlobalView?.reloadData()
     }
     
@@ -73,29 +83,34 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
-        let userFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "TravelingDB")
+        print(travelingDB[indexPath.row].value(forKey: "locName") as Any
+)
         
-        do{
-            let searchResult = try getContext().fetch(userFetch)
-            
-            for p in (searchResult as! [NSManagedObject]){
-                let name =  p.value(forKey: "locName")
-                let desc = p.value(forKey: "locDesc")
-                let img = p.value(forKey: "locImg")
-                let imageUIImage: UIImage = UIImage(data: img as! Data)!
-                if(name as! String == locationName[indexPath.row]){
-                    print("name: \(name!), description: \(desc!)")
-                    
-                    cell.locationName.text = name as? String
-                    cell.locationImage.image = imageUIImage
-                    cell.locationDescription.text = desc as? String
-                }
-            }
-            
-        }catch{
-            print("error")
-        }
-        
+        //cell.locationName.text = travelingDB[indexPath.row].value(forKey: "locName") as? String
+        /*
+         let userFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "TravelingDB")
+         
+         do{
+         let searchResult = try getContext().fetch(userFetch)
+         
+         for p in (searchResult as! [NSManagedObject]){
+         let name =  p.value(forKey: "locName")
+         let desc = p.value(forKey: "locDesc")
+         let img = p.value(forKey: "locImg")
+         let imageUIImage: UIImage = UIImage(data: img as! Data)!
+         if(name as! String == locationName[indexPath.row]){
+         print("name: \(name!), description: \(desc!)")
+         
+         cell.locationName.text = name as? String
+         cell.locationImage.image = imageUIImage
+         cell.locationDescription.text = desc as? String
+         }
+         }
+         
+         }catch{
+         print("error")
+         }
+         */
         
         
         /*
