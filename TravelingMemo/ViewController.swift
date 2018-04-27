@@ -9,27 +9,26 @@
 import UIKit
 import GoogleMaps
 import CoreData
+import SQLite3
 
 class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var UIimageArray = [UIImage]()
-    var locationName = ["秋紅谷", "彩虹眷村", "柳川新風情"]
-    var locationImage = ["lake", "rainbow", "river"]
-    var locationDescription = ["靜謐的都市綠地空間，以自然步道和充滿魚群、烏龜和鳥類的大型生態池聞名。","鄰近嶺東科技大學，是條色彩繽紛、充滿童趣彩繪的巷道。","柳川水岸目前是親水兼具防洪效果的河岸分三區栽植楓香、黃花風鈴木、欒樹等植栽~打造出全年四季不同的河岸風貌。"]
     var colloectionGlobalView: UICollectionView?
     var getDBImage: UIImage?
-    
+    var getModelData = [ModelTravelingClass]()
+    let callDB = SQDBController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let callDB = SQDBController()
         callDB.viewDidLoad()
-        callDB.insertTable(name: locationName[0], longitude: 24.45555454, latitude: 27.454551455, desc: locationDescription[0], img: locationImage[0])
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        getModelData = callDB.getAllValue()
         
         colloectionGlobalView?.reloadData()
     }
@@ -42,16 +41,17 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         colloectionGlobalView = collectionView
-        return locationName.count
+        return getModelData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
-        cell.locationName.text = locationName[indexPath.row]
-        cell.locationImage.image = UIImage(named: locationImage[indexPath.row])
-        cell.locationDescription.text = locationDescription[indexPath.row]
+        cell.locationName.text = getModelData[indexPath.row].name
+        cell.locationImage.image = callDB.getImage(getImagePath: getModelData[indexPath.row].img)
+        cell.locationDescription.text = getModelData[indexPath.row].desc
         
         return cell
     }

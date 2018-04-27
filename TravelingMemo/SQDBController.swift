@@ -39,8 +39,7 @@ class SQDBController: UIViewController{
     func insertTable(name: String, longitude: Double, latitude: Double, desc: String, img: String){
         
         
-        let insertTableQuery = "INSERT INTO TravelingDB(name, longitude, latitude, desc, img)" +
-        "values('\(name)', \(longitude), \(latitude), '\(desc)', '\(img)')"
+        let insertTableQuery = "INSERT INTO TravelingDB(name, longitude, latitude, desc, img) values('\(name)', \(longitude), \(latitude), '\(desc)', '\(img)')"
         
         if sqlite3_prepare(db, insertTableQuery, -1, &returnStatement, nil) == SQLITE_OK{
             if sqlite3_step(returnStatement) == SQLITE_DONE{
@@ -53,16 +52,39 @@ class SQDBController: UIViewController{
     
     func GetTestImageTable(){
         
-        var sql = "select * from TravelingDB"
+        let sql = "select * from TravelingDB"
         
         if sqlite3_prepare(db, sql, -1, &returnStatement, nil) != SQLITE_OK{
             print("error")
         }
         
         while sqlite3_step(returnStatement) == SQLITE_ROW{
-            let UI64bytes = String(cString: sqlite3_column_text(returnStatement, 5))
+            _ = String(cString: sqlite3_column_text(returnStatement, 5))
             
         }
+    }
+    
+    func getAllValue() -> [ModelTravelingClass]{
+        
+        var passObject = [ModelTravelingClass]()
+        let sql = "select * from TravelingDB"
+        
+        if sqlite3_prepare(db, sql, -1, &returnStatement, nil) != SQLITE_OK{
+            print("error")
+        }
+        
+        while sqlite3_step(returnStatement) == SQLITE_ROW {
+            let id = sqlite3_column_int(returnStatement, 0)
+            let name = String(cString: sqlite3_column_text(returnStatement, 1))
+            let longitude = sqlite3_column_double(returnStatement, 2)
+            let latitude = sqlite3_column_double(returnStatement, 3)
+            let description = String(cString: sqlite3_column_text(returnStatement, 4))
+            let imageName = String(cString: sqlite3_column_text(returnStatement, 5))
+            
+            passObject.append(ModelTravelingClass(id: Int(id), longitude: longitude, latitude: latitude, name: name, desc: description, img: imageName))
+        }
+        
+        return passObject
     }
     
     func getDirectoryPath() -> String {
@@ -71,13 +93,30 @@ class SQDBController: UIViewController{
         return documentsDirectory
     }
     
-    func saveImageDocumentDirectory(imageName: String){
+    func saveImageDocumentDirectory(imageName: String, imageFile: UIImage){
         let fileManager = FileManager.default
         let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("\(imageName).jpg")
-        let image = UIImage(named: imageName)
+        let image = imageFile
         print(paths)
-        let imageData = UIImageJPEGRepresentation(image!, 0.5)
+        let imageData = UIImageJPEGRepresentation(image, 0.5)
         fileManager.createFile(atPath: paths as String, contents: imageData, attributes: nil)
+    }
+    
+    func getImage(getImagePath: String) -> UIImage{
+        var getReturnImage: UIImage?
+        let fileManager = FileManager.default
+        var imagePAth = (self.getDirectoryPath() as NSString).appendingPathComponent(getImagePath)
+        
+        if fileManager.fileExists(atPath: imagePAth){
+            //self.imageView.image = UIImage(contentsOfFile: imagePAth)
+            getReturnImage =  UIImage(contentsOfFile: imagePAth)!
+            return getReturnImage!
+        }else{
+            
+            imagePAth = (self.getDirectoryPath() as NSString).appendingPathComponent("0401_empty_Darrel_Austin.jpg")
+            getReturnImage =  UIImage(contentsOfFile: imagePAth)!
+            return getReturnImage!
+        }
     }
     
 }

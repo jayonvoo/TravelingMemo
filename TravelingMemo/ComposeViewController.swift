@@ -10,14 +10,17 @@ import UIKit
 
 class ComposeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
+    var DBDelegate = SQDBController()
     weak var firstViewItemController: ViewController?
     var getUIImage: UIImage?
     var viewImageArray = [UIImage]()
     
     @IBOutlet weak var UINameText: UITextField!
     @IBOutlet weak var UIDescText: UITextView!
-    
-    
+    @IBAction func UISubmitData(_ sender: UIButton) {
+        DBDelegate.saveImageDocumentDirectory(imageName: UINameText.text!, imageFile: getUIImage!)
+        DBDelegate.insertTable(name: UINameText.text!, longitude: 0.0, latitude: 0.0, desc: UIDescText.text, img: "\(UINameText.text!).jpg")
+    }
     @IBAction func UICameraBtn(_ sender: UIButton) {
         
         photoLibrary()
@@ -25,6 +28,8 @@ class ComposeViewController: UIViewController, UIImagePickerControllerDelegate &
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DBDelegate.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }

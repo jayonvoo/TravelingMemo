@@ -14,10 +14,10 @@ class ModelTravelingClass{
     var longitude: Double
     var latitude: Double
     var name: String
-    var desc: Int
-    var img: UIImage
+    var desc: String
+    var img: String
     
-    init(id: Int, longitude: Double, latitude: Double, name: String, desc: Int, img: UIImage) {
+    init(id: Int, longitude: Double, latitude: Double, name: String, desc: String, img: String) {
         self.id = id
         self.name = name
         self.desc = desc
