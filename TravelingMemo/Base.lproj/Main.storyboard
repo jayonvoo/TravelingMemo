@@ -41,7 +41,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2062" y="126"/>
+            <point key="canvasLocation" x="2777" y="-582"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CQS-Ep-YPA">
+            <objects>
+                <viewController id="vSc-M5-4dY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lDn-tG-Bmz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ctv-bG-8oL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCi-o1-DsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="-582"/>
         </scene>
         <!--Memo Trips-->
         <scene sceneID="KqI-6t-jXR">
@@ -68,10 +83,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpq-B4-oWz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="349" height="141"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgs-hL-jCK">
                                                     <rect key="frame" x="0.0" y="147" width="309" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,13 +97,24 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpq-B4-oWz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="349" height="141"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="349" height="250"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="locationDescription" destination="1Hj-zY-xR2" id="0f7-Ku-3ff"/>
                                             <outlet property="locationImage" destination="Hpq-B4-oWz" id="wAk-qx-lGu"/>
                                             <outlet property="locationName" destination="tgs-hL-jCK" id="ThA-yt-Iq2"/>
+                                            <segue destination="vSc-M5-4dY" kind="show" id="rtl-FJ-uiv"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -239,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzA-dp-upy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2908" y="126"/>
+            <point key="canvasLocation" x="3503" y="-582"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lby-WI-GYA">

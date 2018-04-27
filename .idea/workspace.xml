@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list id="11426f54-42f1-43a1-9b78-7dc54974f24f" name="update 1249" comment="" />
     <list id="0d1496b4-c710-4e3f-bd0e-93da326c0a53" name="Revert &quot;update 1020&quot;" comment="Revert &quot;update 1020&quot;&#10;&#10;This reverts commit a17c7a4" />
     <list default="true" id="aa83c88d-5ea8-4ec7-9c71-e57f26f76404" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/TravelingMemo/ModelTravelingClass.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TravelingMemo/SQDBController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TravelingMemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo/Base.lproj/Main.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TravelingMemo/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo/ViewController.swift" afterDir="false" />
     </list>
-    <list id="11426f54-42f1-43a1-9b78-7dc54974f24f" name="update 1249" comment="" />
     <ignored path="$PROJECT_DIR$/../../Developer/Xcode/DerivedData/TravelingMemo-bbfitkguxxgorvhdzaagvppwnwta/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +24,7 @@
       <file leaf-file-name="AppDelegate.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="375">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#133#145#0" expanded="true" />
@@ -38,11 +36,8 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="e#136#148#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="881">
+              <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -50,8 +45,8 @@
       <file leaf-file-name="ComposeViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="705">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -73,7 +68,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="470" />
-    <option name="y" value="385" />
+    <option name="y" value="202" />
     <option name="width" value="1238" />
     <option name="height" value="878" />
   </component>
@@ -82,6 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,7 +94,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Cidr.FilesView" />
     </panes>
   </component>
@@ -145,6 +140,7 @@
       <workItem from="1524492496656" duration="1397000" />
       <workItem from="1524538453213" duration="735000" />
       <workItem from="1524539394193" duration="857000" />
+      <workItem from="1524811374397" duration="557000" />
     </task>
     <task id="LOCAL-00001" summary="update 1742">
       <created>1524131096314</created>
@@ -164,10 +160,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13327000" />
+    <option name="totallyTimeSpent" value="13884000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="470" y="385" width="1238" height="878" extended-state="0" />
+    <frame x="470" y="202" width="1238" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
@@ -175,31 +171,20 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3277849" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3277849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979457" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3277849" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +227,30 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#133#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
@@ -254,9 +263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
-          <folding>
-            <element signature="e#136#148#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -421,9 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-          <folding>
-            <element signature="e#136#148#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -538,7 +541,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TravelingMemo/AppDelegate.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="375">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#133#145#0" expanded="true" />
@@ -548,18 +551,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#136#148#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="881">
+          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="705">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
         </state>
       </provider>
     </entry>

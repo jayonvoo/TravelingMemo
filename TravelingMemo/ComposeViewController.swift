@@ -18,7 +18,11 @@ class ComposeViewController: UIViewController, UIImagePickerControllerDelegate &
     @IBOutlet weak var UINameText: UITextField!
     @IBOutlet weak var UIDescText: UITextView!
     @IBAction func UISubmitData(_ sender: UIButton) {
-        DBDelegate.saveImageDocumentDirectory(imageName: UINameText.text!, imageFile: getUIImage!)
+        
+        if getUIImage != nil{
+            DBDelegate.saveImageDocumentDirectory(imageName: UINameText.text!, imageFile: getUIImage!)
+        }
+        
         DBDelegate.insertTable(name: UINameText.text!, longitude: 0.0, latitude: 0.0, desc: UIDescText.text, img: "\(UINameText.text!).jpg")
     }
     @IBAction func UICameraBtn(_ sender: UIButton) {
