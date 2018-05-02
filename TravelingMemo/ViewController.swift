@@ -24,6 +24,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, UICollectionViewData
         super.viewDidLoad()
         
         callDB.viewDidLoad()
+        print(callDB.getDirectoryPath())
         
     }
     

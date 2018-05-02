@@ -118,5 +118,4 @@ class SQDBController: UIViewController{
             return getReturnImage!
         }
     }
-    
 }

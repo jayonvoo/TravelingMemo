@@ -19,6 +19,7 @@
 		FC4D4B78208B8AFD00931742 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */; };
 		FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */; };
 		FCA00D8A208F167C00F2B734 /* ttmemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCA00D88208F167C00F2B734 /* ttmemo.xcdatamodeld */; };
+		FCCFA8832093249800B640AC /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFA8822093249800B640AC /* CellViewController.swift */; };
 		FCDB071920899613001EA211 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDB071820899613001EA211 /* MapViewController.swift */; };
 		FCDE03A72091706B00ED0ED9 /* SQDBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE03A62091706B00ED0ED9 /* SQDBController.swift */; };
 		FCDE03A9209180EA00ED0ED9 /* ModelTravelingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE03A8209180EA00ED0ED9 /* ModelTravelingClass.swift */; };
@@ -62,6 +63,7 @@
 		FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoViewController.swift; sourceTree = "<group>"; };
 		FCA00D89208F167C00F2B734 /* ttmemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ttmemo.xcdatamodel; sourceTree = "<group>"; };
+		FCCFA8822093249800B640AC /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
 		FCDB071820899613001EA211 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FCDE03A62091706B00ED0ED9 /* SQDBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQDBController.swift; sourceTree = "<group>"; };
 		FCDE03A8209180EA00ED0ED9 /* ModelTravelingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTravelingClass.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */,
 				FCDE03A62091706B00ED0ED9 /* SQDBController.swift */,
 				FCDE03A8209180EA00ED0ED9 /* ModelTravelingClass.swift */,
+				FCCFA8822093249800B640AC /* CellViewController.swift */,
 				FC2690842085A39400F1BF69 /* Main.storyboard */,
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
@@ -367,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCFA8832093249800B640AC /* CellViewController.swift in Sources */,
 				FC2690832085A39300F1BF69 /* ViewController.swift in Sources */,
 				FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */,
 				FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */,

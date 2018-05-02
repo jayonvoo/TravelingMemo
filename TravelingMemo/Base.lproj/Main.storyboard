@@ -43,20 +43,51 @@
             </objects>
             <point key="canvasLocation" x="2777" y="-582"/>
         </scene>
-        <!--View Controller-->
+        <!--Cell View Controller-->
         <scene sceneID="CQS-Ep-YPA">
             <objects>
-                <viewController id="vSc-M5-4dY" sceneMemberID="viewController">
+                <viewController id="vSc-M5-4dY" customClass="CellViewController" customModule="TravelingMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lDn-tG-Bmz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FFt-IN-Rpv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="238"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATE-eo-KD2">
+                                <rect key="frame" x="29" y="323" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XQd-T2-e1L">
+                                <rect key="frame" x="16" y="375" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ctv-bG-8oL" firstAttribute="bottom" secondItem="FFt-IN-Rpv" secondAttribute="bottom" constant="365" id="2gC-7Y-xht"/>
+                            <constraint firstItem="XQd-T2-e1L" firstAttribute="top" secondItem="ATE-eo-KD2" secondAttribute="bottom" constant="31" id="Ncc-j8-M5j"/>
+                            <constraint firstItem="ATE-eo-KD2" firstAttribute="top" secondItem="FFt-IN-Rpv" secondAttribute="bottom" constant="21" id="P6e-40-DzM"/>
+                            <constraint firstItem="Ctv-bG-8oL" firstAttribute="trailing" secondItem="XQd-T2-e1L" secondAttribute="trailing" constant="119" id="QeG-UH-ujA"/>
+                            <constraint firstItem="Ctv-bG-8oL" firstAttribute="bottom" secondItem="XQd-T2-e1L" secondAttribute="bottom" constant="164" id="abX-Gn-EoE"/>
+                            <constraint firstItem="FFt-IN-Rpv" firstAttribute="top" secondItem="Ctv-bG-8oL" secondAttribute="top" id="c0c-d3-igk"/>
+                            <constraint firstItem="Ctv-bG-8oL" firstAttribute="trailing" secondItem="FFt-IN-Rpv" secondAttribute="trailing" id="eja-XQ-hqj"/>
+                            <constraint firstItem="ATE-eo-KD2" firstAttribute="leading" secondItem="Ctv-bG-8oL" secondAttribute="leading" constant="29" id="h9S-Cz-RDA"/>
+                            <constraint firstItem="XQd-T2-e1L" firstAttribute="leading" secondItem="Ctv-bG-8oL" secondAttribute="leading" constant="16" id="jir-dK-bhj"/>
+                            <constraint firstItem="FFt-IN-Rpv" firstAttribute="leading" secondItem="Ctv-bG-8oL" secondAttribute="leading" id="sv2-Vk-dw3"/>
+                            <constraint firstItem="Ctv-bG-8oL" firstAttribute="trailing" secondItem="ATE-eo-KD2" secondAttribute="trailing" constant="302" id="uvj-EA-yrT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ctv-bG-8oL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCi-o1-DsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="-582"/>
+            <point key="canvasLocation" x="2020" y="-582.45877061469275"/>
         </scene>
         <!--Memo Trips-->
         <scene sceneID="KqI-6t-jXR">
@@ -84,14 +115,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgs-hL-jCK">
-                                                    <rect key="frame" x="0.0" y="147" width="309" height="34"/>
+                                                    <rect key="frame" x="10" y="147" width="309" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A beautiful places" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hj-zY-xR2">
-                                                    <rect key="frame" x="0.0" y="179" width="309" height="51"/>
+                                                    <rect key="frame" x="10" y="179" width="309" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -114,7 +145,7 @@
                                             <outlet property="locationDescription" destination="1Hj-zY-xR2" id="0f7-Ku-3ff"/>
                                             <outlet property="locationImage" destination="Hpq-B4-oWz" id="wAk-qx-lGu"/>
                                             <outlet property="locationName" destination="tgs-hL-jCK" id="ThA-yt-Iq2"/>
-                                            <segue destination="vSc-M5-4dY" kind="show" id="rtl-FJ-uiv"/>
+                                            <segue destination="vSc-M5-4dY" kind="show" identifier="cellDetail" id="rtl-FJ-uiv"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

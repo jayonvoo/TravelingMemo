@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="11426f54-42f1-43a1-9b78-7dc54974f24f" name="update 1249" comment="" />
     <list id="0d1496b4-c710-4e3f-bd0e-93da326c0a53" name="Revert &quot;update 1020&quot;" comment="Revert &quot;update 1020&quot;&#10;&#10;This reverts commit a17c7a4" />
+    <list id="11426f54-42f1-43a1-9b78-7dc54974f24f" name="update 1249" comment="" />
     <list default="true" id="aa83c88d-5ea8-4ec7-9c71-e57f26f76404" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/TravelingMemo/CellViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TravelingMemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo.xcworkspace/xcuserdata/travelingkp.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TravelingMemo/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/TravelingMemo/Base.lproj/Main.storyboard" afterDir="false" />
@@ -36,8 +38,8 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="881">
-              <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+            <state relative-caret-position="51">
+              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -46,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
-              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -67,8 +69,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="470" />
-    <option name="y" value="202" />
+    <option name="x" value="293" />
+    <option name="y" value="123" />
     <option name="width" value="1238" />
     <option name="height" value="878" />
   </component>
@@ -140,7 +142,7 @@
       <workItem from="1524492496656" duration="1397000" />
       <workItem from="1524538453213" duration="735000" />
       <workItem from="1524539394193" duration="857000" />
-      <workItem from="1524811374397" duration="557000" />
+      <workItem from="1524811374397" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="update 1742">
       <created>1524131096314</created>
@@ -160,10 +162,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13884000" />
+    <option name="totallyTimeSpent" value="14768000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="470" y="202" width="1238" height="878" extended-state="0" />
+    <frame x="293" y="123" width="1238" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
@@ -551,15 +553,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TravelingMemo/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+        <state relative-caret-position="51">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TravelingMemo/ComposeViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
         </state>
       </provider>
     </entry>
