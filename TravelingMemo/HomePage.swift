@@ -20,7 +20,7 @@ struct ParkingSpaceData{
     var payGuide: String
     var introduction: String
     var address: String
-    var wgsXL: Double
+    var wgsX: Double
     var wgsY: Double
     var parkId: String
     
@@ -33,7 +33,7 @@ struct ParkingSpaceData{
         self.payGuide = dictionary["payGuide"] as? String ?? ""
         self.introduction = dictionary["introduction"] as? String ?? ""
         self.address = dictionary["address"] as? String ?? ""
-        self.wgsXL = dictionary["wgsXL"] as? Double ?? 0.0
+        self.wgsX = dictionary["wgsX"] as? Double ?? 0.0
         self.wgsY = dictionary["wgsY"] as? Double ?? 0.0
         self.parkId = dictionary["parkId"] as? String ?? ""
     }
@@ -48,41 +48,11 @@ class HomePage: UIViewController{
     var searchController: UISearchController!
     var searchTableList: SearchTableView!
     var jsonObject = [ParkingSpaceData]()
+    var dispatch = DispatchSemaphore.init(value: 0)
     override func viewDidLoad() {
         
-        URLSession.shared.dataTask(with: URL(string: "https://data.tycg.gov.tw/opendata/datalist/datasetMeta/download?id=f4cc0b12-86ac-40f9-8745-885bddc18f79&rid=0daad6e6-0632-44f5-bd25-5e1de1e9146f")!){(data, responds, error) in
-            
-            if error == nil{
-                
-                do{
-                    
-                    if let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any],
-                        let arrayParse = json["parkingLots"] as? [[String:Any]]{
-                        
-                        for item in arrayParse{
-                            let dict = ParkingSpaceData(dictionary: item)
-                            self.jsonObject.append(dict)
-                            
-                            print(self.jsonObject[0].address)
-                        }
-                    }
-                    /*
-                     let result = try JSONDecoder().decode(ParkingSpaceModel.self, from: json as! Data)
-                     for getData in result.ParkingLots{
-                     print(getData.address)
-                     }
-                     */
-                    //let json = try JSONSerialization.jsonObject(with: data!)
-                    //4›print("json code:\(json)")
-                    
-                    
-                    
-                }catch{}
-            }
-            
-            }.resume()
         
-        
+        dataInitializer()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -105,6 +75,8 @@ class HomePage: UIViewController{
         searchController = searchControllerWith(searchResultsController: nil)
         navigationItem.titleView = searchController.searchBar
         definesPresentationContext = true
+        
+        addMarker()
         
     }
     
@@ -140,6 +112,45 @@ class HomePage: UIViewController{
         searchController.dimsBackgroundDuringPresentation = true
         
         return searchController
+    }
+    
+    func dataInitializer(){
+        
+        URLSession.shared.dataTask(with: URL(string: "https://data.tycg.gov.tw/opendata/datalist/datasetMeta/download?id=f4cc0b12-86ac-40f9-8745-885bddc18f79&rid=0daad6e6-0632-44f5-bd25-5e1de1e9146f")!){(data, responds, error) in
+            
+            if error == nil{
+                
+                do{
+                    
+                    if let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any],
+                        let arrayParse = json["parkingLots"] as? [[String:Any]]{
+                        
+                        for item in arrayParse{
+                            
+                            let dict = ParkingSpaceData(dictionary: item)
+                            self.jsonObject.append(dict)
+                            
+                            //print(self.jsonObject[0].address)
+                        }
+                    }
+                    
+                    self.dispatch.signal()
+                    
+                }catch{}
+            }
+            
+            }.resume()
+        dispatch.wait()
+    }
+    
+    func addMarker() {
+        
+        for item in 0..<jsonObject.count{
+            let position = CLLocationCoordinate2D(latitude: jsonObject[item].wgsY, longitude: jsonObject[item].wgsX)
+            let marker = GMSMarker(position: position)
+            marker.title = jsonObject[item].parkName
+            marker.map = mapView
+        }
     }
 }
 
