@@ -8,21 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B58F2ECADDE045D3D363DBC0 /* Pods_TravelingMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24D2F4EB053076C41C4BB2D /* Pods_TravelingMemo.framework */; };
-		FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1D2928208849E60046845A /* CollectionViewCell.swift */; };
-		FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690802085A39300F1BF69 /* AppDelegate.swift */; };
+		FC1FBA1220D2264A00E0CE74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1FBA1120D2264A00E0CE74 /* AppDelegate.swift */; };
+		FC1FBA1420D23B6F00E0CE74 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1FBA1320D23B6F00E0CE74 /* HomePage.swift */; };
+		FC1FBA1620D23B9500E0CE74 /* FavoritePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1FBA1520D23B9500E0CE74 /* FavoritePage.swift */; };
 		FC2690832085A39300F1BF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690822085A39300F1BF69 /* ViewController.swift */; };
 		FC2690862085A39400F1BF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2690842085A39400F1BF69 /* Main.storyboard */; };
 		FC2690882085A39900F1BF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2690872085A39900F1BF69 /* Assets.xcassets */; };
 		FC26908B2085A39900F1BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */; };
 		FC2690962085A39900F1BF69 /* TravelingMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690952085A39900F1BF69 /* TravelingMemoTests.swift */; };
 		FC2690A12085A39900F1BF69 /* TravelingMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */; };
-		FC4D4B78208B8AFD00931742 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */; };
-		FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */; };
-		FCA00D8A208F167C00F2B734 /* ttmemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCA00D88208F167C00F2B734 /* ttmemo.xcdatamodeld */; };
-		FCCFA8832093249800B640AC /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFA8822093249800B640AC /* CellViewController.swift */; };
-		FCDB071920899613001EA211 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDB071820899613001EA211 /* MapViewController.swift */; };
-		FCDE03A72091706B00ED0ED9 /* SQDBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE03A62091706B00ED0ED9 /* SQDBController.swift */; };
-		FCDE03A9209180EA00ED0ED9 /* ModelTravelingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE03A8209180EA00ED0ED9 /* ModelTravelingClass.swift */; };
+		FC42C12520D351AB001503F5 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42C12420D351AB001503F5 /* SearchTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +41,10 @@
 		635313802E08F17167CC7466 /* Pods-TravelingMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.release.xcconfig"; sourceTree = "<group>"; };
 		A24D2F4EB053076C41C4BB2D /* Pods_TravelingMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelingMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55158F242C06DB19C1CFB99 /* Pods-TravelingMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelingMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo.debug.xcconfig"; sourceTree = "<group>"; };
-		FC1D2928208849E60046845A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FC1FBA1120D2264A00E0CE74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC1FBA1320D23B6F00E0CE74 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		FC1FBA1520D23B9500E0CE74 /* FavoritePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePage.swift; sourceTree = "<group>"; };
 		FC26907D2085A39300F1BF69 /* TravelingMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelingMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC2690802085A39300F1BF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2690822085A39300F1BF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC2690852085A39400F1BF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC2690872085A39900F1BF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,13 +56,7 @@
 		FC26909C2085A39900F1BF69 /* TravelingMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelingMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelingMemoUITests.swift; sourceTree = "<group>"; };
 		FC2690A22085A39900F1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
-		FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoViewController.swift; sourceTree = "<group>"; };
-		FCA00D89208F167C00F2B734 /* ttmemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ttmemo.xcdatamodel; sourceTree = "<group>"; };
-		FCCFA8822093249800B640AC /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
-		FCDB071820899613001EA211 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		FCDE03A62091706B00ED0ED9 /* SQDBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQDBController.swift; sourceTree = "<group>"; };
-		FCDE03A8209180EA00ED0ED9 /* ModelTravelingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTravelingClass.swift; sourceTree = "<group>"; };
+		FC42C12420D351AB001503F5 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,20 +127,15 @@
 		FC26907F2085A39300F1BF69 /* TravelingMemo */ = {
 			isa = PBXGroup;
 			children = (
-				FC2690802085A39300F1BF69 /* AppDelegate.swift */,
-				FC1D2928208849E60046845A /* CollectionViewCell.swift */,
+				FC1FBA1120D2264A00E0CE74 /* AppDelegate.swift */,
 				FC2690822085A39300F1BF69 /* ViewController.swift */,
-				FCDB071820899613001EA211 /* MapViewController.swift */,
-				FC8ED4BC20872F5100DCF556 /* PanoViewController.swift */,
-				FC4D4B77208B8AFD00931742 /* ComposeViewController.swift */,
-				FCDE03A62091706B00ED0ED9 /* SQDBController.swift */,
-				FCDE03A8209180EA00ED0ED9 /* ModelTravelingClass.swift */,
-				FCCFA8822093249800B640AC /* CellViewController.swift */,
+				FC1FBA1320D23B6F00E0CE74 /* HomePage.swift */,
+				FC1FBA1520D23B9500E0CE74 /* FavoritePage.swift */,
+				FC42C12420D351AB001503F5 /* SearchTableView.swift */,
 				FC2690842085A39400F1BF69 /* Main.storyboard */,
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
 				FC26908C2085A39900F1BF69 /* Info.plist */,
-				FCA00D88208F167C00F2B734 /* ttmemo.xcdatamodeld */,
 			);
 			path = TravelingMemo;
 			sourceTree = "<group>";
@@ -370,16 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCCFA8832093249800B640AC /* CellViewController.swift in Sources */,
 				FC2690832085A39300F1BF69 /* ViewController.swift in Sources */,
-				FC2690812085A39300F1BF69 /* AppDelegate.swift in Sources */,
-				FC1D2929208849E60046845A /* CollectionViewCell.swift in Sources */,
-				FC4D4B78208B8AFD00931742 /* ComposeViewController.swift in Sources */,
-				FCA00D8A208F167C00F2B734 /* ttmemo.xcdatamodeld in Sources */,
-				FCDE03A9209180EA00ED0ED9 /* ModelTravelingClass.swift in Sources */,
-				FCDE03A72091706B00ED0ED9 /* SQDBController.swift in Sources */,
-				FCDB071920899613001EA211 /* MapViewController.swift in Sources */,
-				FC8ED4BD20872F5100DCF556 /* PanoViewController.swift in Sources */,
+				FC42C12520D351AB001503F5 /* SearchTableView.swift in Sources */,
+				FC1FBA1420D23B6F00E0CE74 /* HomePage.swift in Sources */,
+				FC1FBA1620D23B9500E0CE74 /* FavoritePage.swift in Sources */,
+				FC1FBA1220D2264A00E0CE74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +533,9 @@
 			baseConfigurationReference = D55158F242C06DB19C1CFB99 /* Pods-TravelingMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TR988DW9Y;
 				INFOPLIST_FILE = TravelingMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -561,6 +543,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -571,7 +554,9 @@
 			baseConfigurationReference = 635313802E08F17167CC7466 /* Pods-TravelingMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TR988DW9Y;
 				INFOPLIST_FILE = TravelingMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -579,6 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.travelingkp.TravelingMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -702,19 +688,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FCA00D88208F167C00F2B734 /* ttmemo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FCA00D89208F167C00F2B734 /* ttmemo.xcdatamodel */,
-			);
-			currentVersion = FCA00D89208F167C00F2B734 /* ttmemo.xcdatamodel */;
-			path = ttmemo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FC2690752085A39300F1BF69 /* Project object */;
 }
