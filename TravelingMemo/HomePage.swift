@@ -63,20 +63,13 @@ class HomePage: UIViewController{
         mapView.settings.myLocationButton = true
         mapView.settings.indoorPicker = false
         
-        gmsFetcher = GMSAutocompleteFetcher()
-        gmsFetcher.delegate = self
-        
         searchTableList = SearchTableView()
-        searchTableList.delegate = self
         
-        //searchBar.showsCancelButton = false
-        //searchBar.placeholder = "搜尋停車場"
-        //searchBar.delegate = self
         searchController = searchControllerWith(searchResultsController: nil)
         navigationItem.titleView = searchController.searchBar
         definesPresentationContext = true
         
-        addMarker()
+        //addMarker()
         
     }
     
@@ -92,12 +85,12 @@ class HomePage: UIViewController{
         mapView.camera = camera
         mapView.isMyLocationEnabled = true
         
-        let marker = GMSMarker(position: center)
+        //let marker = GMSMarker(position: center)
         
         print("Latitude :- \(userLocation!.coordinate.latitude)")
         print("Longitude :-\(userLocation!.coordinate.longitude)")
-        marker.map = mapView
-        marker.title = "Current Location"
+        //marker.map = mapView
+        //marker.title = "Current Location"
         locationManager.stopUpdatingLocation()
     }
     
@@ -167,6 +160,11 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
         let searchController = UISearchController(searchResultsController: searchTableList)
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "搜尋停車場"
+        searchTableList.carParkName = jsonObject.map({(parkingSpaceData: ParkingSpaceData) -> String in
+            parkingSpaceData.parkName
+        })
+        searchTableList.passJsonObject = jsonObject
+        searchTableList.getMapView = self.mapView
         self.present(searchController, animated: true, completion: nil)
         
     }
@@ -174,32 +172,23 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         searchTableList.filterContent(searchString: searchBar.text!)
-        /*
-         let placeClient = GMSPlacesClient()
-         
-         placeClient.autocompleteQuery(searchText, bounds: nil, filter: nil) { (results, error) in
-         
-         self.searchTableList.passSearchController(search: self.searchController)
-         
-         if results == nil{
-         return
-         }
-         
-         for result in results!{
-         if let result = result as? GMSAutocompletePrediction{
-         self.searchArray.append(result.attributedFullText.string)
-         }
-         }
-         self.searchTableList.reloadDataWithArray(self.searchArray)
-         }
-         
-         //self.searchArray.removeAll()
-         //gmsFetcher?.sourceTextHasChanged(searchText)
-         */
+        
+    }
+    
+    func didSelectParkName(_ name: String, _ latitude: Double, _ longitude: Double, _ passMapView: GMSMapView){
+        
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 15)
+        self.mapView = passMapView
+        self.mapView.camera = camera
+        self.mapView.clear()
+        let position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let marker = GMSMarker(position: position)
+        marker.title = name
+        marker.map = mapView
     }
 }
 
-extension HomePage: GMSAutocompleteFetcherDelegate, LocateOnTheMap{
+extension HomePage: LocateOnTheMap{
     func locateWithLongitude(_ lon: Double, andLatitude lat: Double, andTitle title: String) {
         
         let position = CLLocationCoordinate2DMake(lat, lon)
@@ -213,17 +202,8 @@ extension HomePage: GMSAutocompleteFetcherDelegate, LocateOnTheMap{
         
     }
     
-    func didFailAutocompleteWithError(_ error: Error) {
-        
-    }
+}
+
+extension HomePage: GMSMapViewDelegate{
     
-    func didAutocomplete(with predictions: [GMSAutocompletePrediction]) {
-        
-        for prediction in predictions{
-            if let prediction = prediction as GMSAutocompletePrediction!{
-                self.searchArray.append(prediction.attributedFullText.string)
-            }
-        }
-        self.searchTableList.reloadDataWithArray(self.searchArray)
-    }
 }

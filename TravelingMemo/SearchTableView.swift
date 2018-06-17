@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
+
+struct LocationXY {
+    var latitude: Double
+    var longitude: Double
+}
 
 protocol LocateOnTheMap{
     func locateWithLongitude(_ lon:Double, andLatitude lat:Double, andTitle title: String)
@@ -14,12 +21,15 @@ protocol LocateOnTheMap{
 
 class SearchTableView: UITableViewController {
     
-    var testStringArr = ["abc", "def", "ghi", "jkl", "lmn"]
+    var carParkName: [String]!
+    var locationData: [LocationXY]!
     var searchResults: [String]!
     var filterArray = [String]()
     var getSearchBar: String!
     var delegate: LocateOnTheMap!
-    
+    var homePageController = HomePage()
+    var passJsonObject: [ParkingSpaceData]!
+    var getMapView: GMSMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.searchResults = Array()
@@ -41,7 +51,7 @@ class SearchTableView: UITableViewController {
         if getSearchBar != ""{
             return filterArray.count
         }else {
-            return testStringArr.count
+            return carParkName.count
         }
     }
     
@@ -51,15 +61,21 @@ class SearchTableView: UITableViewController {
         if getSearchBar != ""{
             cell.textLabel?.text = filterArray[indexPath.row]
         }else{
-            cell.textLabel?.text = testStringArr[indexPath.row]
+            cell.textLabel?.text = carParkName[indexPath.row]
         }
         
         return cell
     }
     
-    func filterContent(searchString: String){
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        filterArray = testStringArr.filter(){nil != $0.range(of: searchString)}
+        homePageController.didSelectParkName(carParkName[indexPath.row], passJsonObject[indexPath.row].wgsY, passJsonObject[indexPath.row].wgsX, getMapView)
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func filterContent(searchString: String){
+        filterArray = carParkName.filter(){nil != $0.range(of: searchString)}
         getSearchBar = searchString
         self.tableView.reloadData()
     }
