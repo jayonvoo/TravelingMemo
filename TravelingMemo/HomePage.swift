@@ -156,6 +156,7 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
         searchTableList.tableView.isHidden = true
     }
     
+    ///當鍵入文字後，顯示搜尋結果
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         let searchController = UISearchController(searchResultsController: searchTableList)
         searchController.searchBar.delegate = self
@@ -169,12 +170,14 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
         
     }
     
+    ///篩選文字
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         searchTableList.filterContent(searchString: searchBar.text!)
         
     }
     
+    ///選取和標記地圖
     func didSelectParkName(_ name: String, _ latitude: Double, _ longitude: Double, _ passMapView: GMSMapView){
         
         let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 15)
