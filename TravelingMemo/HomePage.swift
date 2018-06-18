@@ -9,7 +9,9 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
-
+import Alamofire
+import SwiftyJSON
+import UserNotifications
 
 struct ParkingSpaceData{
     var areaId: String
@@ -49,6 +51,10 @@ class HomePage: UIViewController{
     var searchTableList: SearchTableView!
     var jsonObject = [ParkingSpaceData]()
     var dispatch = DispatchSemaphore.init(value: 0)
+    var getCurrentLocation, getDestinationLocation: CLLocation!
+    var minDistance: Double!
+    var minDistancePath: CLLocation!
+    var minDistParkName: String!
     override func viewDidLoad() {
         
         
@@ -79,9 +85,12 @@ class HomePage: UIViewController{
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
+        
+        
         let userLocation = locations.last
-        let center = CLLocationCoordinate2D(latitude: (userLocation?.coordinate.latitude)!, longitude: (userLocation?.coordinate.longitude)!)
+        //let center = CLLocationCoordinate2D(latitude: (userLocation?.coordinate.latitude)!, longitude: (userLocation?.coordinate.longitude)!)
         let camera = GMSCameraPosition.camera(withLatitude: (userLocation?.coordinate.latitude)!, longitude: (userLocation?.coordinate.longitude)!, zoom: 15)
+        
         mapView.camera = camera
         mapView.isMyLocationEnabled = true
         
@@ -92,6 +101,25 @@ class HomePage: UIViewController{
         //marker.map = mapView
         //marker.title = "Current Location"
         locationManager.stopUpdatingLocation()
+        
+        getCurrentLocation = userLocation
+        
+        minDistance = getCurrentLocation.distance(from: CLLocation(latitude: jsonObject[0].wgsY, longitude: jsonObject[0].wgsX))
+        minDistancePath = CLLocation(latitude: jsonObject[0].wgsY, longitude: jsonObject[0].wgsX)
+        minDistParkName = jsonObject[0].parkName
+        
+        for location in jsonObject{
+            
+            let distance = CLLocation(latitude: location.wgsY, longitude: location.wgsX)
+            
+            if getCurrentLocation.distance(from: distance) < minDistance{
+                minDistance = getCurrentLocation.distance(from: distance)
+                minDistancePath = distance
+                minDistParkName = location.parkName
+            }
+        }
+        
+        drawPath(currentLocation: getCurrentLocation, destinationLocation: minDistancePath)
     }
     
     func searchControllerWith(searchResultsController: UIViewController?) -> UISearchController {
@@ -145,6 +173,53 @@ class HomePage: UIViewController{
             marker.map = mapView
         }
     }
+    
+    //路徑規劃
+    func drawPath(currentLocation: CLLocation, destinationLocation: CLLocation){
+        
+        let origin = "\(currentLocation.coordinate.latitude),\(currentLocation.coordinate.longitude)"
+        let destination = "\(destinationLocation.coordinate.latitude),\(destinationLocation.coordinate.longitude)"
+        
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving"
+        
+        let position = CLLocationCoordinate2D(latitude: destinationLocation.coordinate.latitude, longitude: destinationLocation.coordinate.longitude)
+        let marker = GMSMarker(position: position)
+        marker.title = minDistParkName
+        marker.map = mapView
+        self.mapView.delegate = self
+        
+        Alamofire.request(url).responseJSON { response in
+            
+            print(response.request as Any)  // original URL request
+            print(response.response as Any) // HTTP URL response
+            print(response.data as Any)     // server data
+            print(response.result as Any)   // result of response serialization
+            
+            let json = try? JSON(data: response.data!)
+            let routes = json!["routes"].arrayValue
+            
+            // print route using Polyline
+            for route in routes
+            {
+                let routeOverviewPolyline = route["overview_polyline"].dictionary
+                let points = routeOverviewPolyline?["points"]?.stringValue
+                let path = GMSPath.init(fromEncodedPath: points!)
+                let polyline = GMSPolyline.init(path: path)
+                polyline.strokeWidth = 4
+                polyline.geodesic = true
+                polyline.strokeColor = UIColor.red
+                polyline.map = self.mapView
+            }
+            
+        }
+    }
+    
+    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+        let window = InfoWindows.createInfoWindows()
+        window.InfoTitle.text = marker.title
+        
+        return window
+    }
 }
 
 extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationManagerDelegate, UISearchResultsUpdating{
@@ -188,6 +263,7 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
         let marker = GMSMarker(position: position)
         marker.title = name
         marker.map = mapView
+   
     }
 }
 

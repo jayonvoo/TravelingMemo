@@ -18,6 +18,8 @@
 		FC2690962085A39900F1BF69 /* TravelingMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690952085A39900F1BF69 /* TravelingMemoTests.swift */; };
 		FC2690A12085A39900F1BF69 /* TravelingMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */; };
 		FC42C12520D351AB001503F5 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42C12420D351AB001503F5 /* SearchTableView.swift */; };
+		FCFC2E0820D7A99D00C3A4E8 /* InfoWindows.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFC2E0720D7A99D00C3A4E8 /* InfoWindows.xib */; };
+		FCFC2E0A20D7B37300C3A4E8 /* InfoWindows.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC2E0920D7B37300C3A4E8 /* InfoWindows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelingMemoUITests.swift; sourceTree = "<group>"; };
 		FC2690A22085A39900F1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC42C12420D351AB001503F5 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
+		FCFC2E0720D7A99D00C3A4E8 /* InfoWindows.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoWindows.xib; sourceTree = "<group>"; };
+		FCFC2E0920D7B37300C3A4E8 /* InfoWindows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWindows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				FC1FBA1520D23B9500E0CE74 /* FavoritePage.swift */,
 				FC42C12420D351AB001503F5 /* SearchTableView.swift */,
 				FC2690842085A39400F1BF69 /* Main.storyboard */,
+				FCFC2E0720D7A99D00C3A4E8 /* InfoWindows.xib */,
+				FCFC2E0920D7B37300C3A4E8 /* InfoWindows.swift */,
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
 				FC26908C2085A39900F1BF69 /* Info.plist */,
@@ -268,6 +274,7 @@
 				FC26908B2085A39900F1BF69 /* LaunchScreen.storyboard in Resources */,
 				FC2690882085A39900F1BF69 /* Assets.xcassets in Resources */,
 				FC2690862085A39400F1BF69 /* Main.storyboard in Resources */,
+				FCFC2E0820D7A99D00C3A4E8 /* InfoWindows.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,13 +322,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelingMemo/Pods-TravelingMemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -356,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2690832085A39300F1BF69 /* ViewController.swift in Sources */,
+				FCFC2E0A20D7B37300C3A4E8 /* InfoWindows.swift in Sources */,
 				FC42C12520D351AB001503F5 /* SearchTableView.swift in Sources */,
 				FC1FBA1420D23B6F00E0CE74 /* HomePage.swift in Sources */,
 				FC1FBA1620D23B9500E0CE74 /* FavoritePage.swift in Sources */,
