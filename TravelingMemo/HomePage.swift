@@ -55,6 +55,12 @@ class HomePage: UIViewController{
     var minDistance: Double!
     var minDistancePath: CLLocation!
     var minDistParkName: String!
+    var getMarkerPosition: CLLocationCoordinate2D?
+    var passFavoriteData = FavoritePage()
+    var getDidTapParkName, getDidTapTime: String!
+    let window = InfoWindows.createInfoWindows()
+    let timePicker = UIDatePicker()
+    let toolbar = UIToolbar()
     override func viewDidLoad() {
         
         
@@ -215,10 +221,80 @@ class HomePage: UIViewController{
     }
     
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
-        let window = InfoWindows.createInfoWindows()
         window.InfoTitle.text = marker.title
+        getDidTapParkName = marker.title
         
         return window
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        self.mapView.selectedMarker = marker
+        self.getMarkerPosition = marker.position
+        window.directionBtn.addTarget(self, action: #selector(directionTap(sender:)), for: .touchUpInside)
+        window.favoriteBtn.addTarget(self, action: #selector(favoriteBtn), for: .touchUpInside)
+        
+        window.center = mapView.projection.point(for: marker.position)
+        window.center.y -= 20
+        self.view.addSubview(window)
+        return false
+        
+    }
+   
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        if self.getMarkerPosition != nil{
+            let location = self.getMarkerPosition
+            window.center = mapView.projection.point(for: location!)
+            window.center.y -= 20
+        }
+    }
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        window.removeFromSuperview()
+    }
+    
+    @objc func directionTap(sender: UIButton!){
+        print("Direction Btn Tap!")
+    }
+    @objc func favoriteBtn(){
+        
+        timePicker.datePickerMode = .time
+        timePicker.frame = CGRect(x: 0, y: self.view.frame.maxY - 245, width: self.view.bounds.width, height: 200)
+        
+        timePicker.backgroundColor = UIColor.white
+        
+        self.view.addSubview(timePicker)
+        
+        toolbar.barStyle = .default
+        toolbar.isTranslucent = false
+        toolbar.tintColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+        toolbar.sizeToFit()
+        toolbar.frame.origin.y = timePicker.frame.minY - toolbar.frame.height
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(timePickFinish))
+        
+        toolbar.setItems([doneButton], animated: true)
+        
+        self.view.addSubview(toolbar)
+        self.toolbar.isHidden = false
+        self.timePicker.isHidden = false
+    }
+    
+    @objc func timePickFinish(){
+        
+        let timeFormater = DateFormatter()
+        timeFormater.timeStyle = .short
+        getDidTapTime = timeFormater.string(from: timePicker.date)
+        //passFavoriteData.dataCollection.append(UserCollectionData(parkName: getDidTapParkName, time: getDidTapTime))
+        
+        //passFavoriteData.tableView.reloadData()
+        self.timePicker.isHidden = true
+        self.toolbar.isHidden = true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navVC = segue.destination as? UINavigationController
+        let tableVC = navVC?.viewControllers.first as? FavoritePage
+        
+        tableVC?.dataCollection.append(UserCollectionData(parkName: getDidTapParkName, time: getDidTapTime))
     }
 }
 
@@ -263,7 +339,7 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
         let marker = GMSMarker(position: position)
         marker.title = name
         marker.map = mapView
-   
+        
     }
 }
 

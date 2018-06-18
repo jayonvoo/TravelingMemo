@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InfoWindows" customModule="TravelingMemo" customModuleProvider="target">
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="InfoWindows" customModule="TravelingMemo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="180" height="104"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -21,18 +22,24 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2Q-oY-b33">
                             <rect key="frame" x="0.0" y="0.0" width="85" height="49"/>
-                            <state key="normal" title="Button"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="f2Q-oY-b33" secondAttribute="height" multiplier="85:49" id="aud-al-69H"/>
+                            </constraints>
+                            <state key="normal" title="導航"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyS-ia-EID">
                             <rect key="frame" x="95" y="0.0" width="85" height="49"/>
-                            <state key="normal" title="Button"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="IyS-ia-EID" secondAttribute="height" multiplier="85:49" id="W0m-ZO-Jvx"/>
+                            </constraints>
+                            <state key="normal" title="收藏"/>
                         </button>
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNA-bs-H1r">
                     <rect key="frame" x="0.0" y="0.0" width="180" height="55"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="55" id="Q1b-hh-z2c"/>
+                        <constraint firstAttribute="width" secondItem="qNA-bs-H1r" secondAttribute="height" multiplier="36:11" id="8O0-BR-jef"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -41,20 +48,20 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="qNA-bs-H1r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8OQ-3U-QJ0"/>
-                <constraint firstAttribute="trailing" secondItem="qNA-bs-H1r" secondAttribute="trailing" id="CfS-hi-KRf"/>
-                <constraint firstItem="qNA-bs-H1r" firstAttribute="trailing" secondItem="iML-EC-dne" secondAttribute="trailing" id="Fj0-wJ-l9a"/>
+                <constraint firstItem="qNA-bs-H1r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="80f-Ga-wMc"/>
+                <constraint firstItem="qNA-bs-H1r" firstAttribute="leading" secondItem="iML-EC-dne" secondAttribute="leading" id="QSV-Im-BwX"/>
                 <constraint firstItem="iML-EC-dne" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Rf7-aW-dOW"/>
-                <constraint firstItem="qNA-bs-H1r" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Rux-Ti-J7b"/>
-                <constraint firstItem="iML-EC-dne" firstAttribute="top" secondItem="qNA-bs-H1r" secondAttribute="bottom" id="fXa-Ff-yDi"/>
-                <constraint firstItem="qNA-bs-H1r" firstAttribute="leading" secondItem="iML-EC-dne" secondAttribute="leading" id="mgL-sb-2ig"/>
+                <constraint firstItem="qNA-bs-H1r" firstAttribute="trailing" secondItem="iML-EC-dne" secondAttribute="trailing" id="cKq-ec-3ZG"/>
+                <constraint firstItem="iML-EC-dne" firstAttribute="top" secondItem="qNA-bs-H1r" secondAttribute="bottom" id="f6b-gX-8MC"/>
+                <constraint firstItem="qNA-bs-H1r" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="miN-EN-y0v"/>
+                <constraint firstAttribute="trailing" secondItem="qNA-bs-H1r" secondAttribute="trailing" id="t9P-oG-PAj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="InfoTitle" destination="qNA-bs-H1r" id="8EJ-ke-JZl"/>
-                <outlet property="directionBtn" destination="f2Q-oY-b33" id="2g9-bT-Yog"/>
-                <outlet property="favoriteBtn" destination="IyS-ia-EID" id="xei-j4-MGN"/>
+                <outlet property="directionBtn" destination="f2Q-oY-b33" id="djJ-7Y-FBY"/>
+                <outlet property="favoriteBtn" destination="IyS-ia-EID" id="ZIF-fg-mfa"/>
             </connections>
             <point key="canvasLocation" x="-110" y="518"/>
         </view>

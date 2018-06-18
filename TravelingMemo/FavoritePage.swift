@@ -8,8 +8,32 @@
 
 import UIKit
 
-class FavoritePage: UIViewController{
+struct UserCollectionData {
+    var parkName: String
+    var time: String
+}
+
+class FavoritePage: UITableViewController{
+    
+    var dataCollection = [UserCollectionData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataCollection.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "collectionTable", for: indexPath)
+        let parkTitle = cell.viewWithTag(1) as! UILabel
+        let timeLabel = cell.viewWithTag(2) as! UILabel
+        
+        parkTitle.text = dataCollection[indexPath.row].parkName
+        timeLabel.text = dataCollection[indexPath.row].time
+        
+        return cell
     }
 }
