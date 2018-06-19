@@ -3,13 +3,29 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in HomePage.searchBar(_:textDidChange:):HomePage.swift">
-      </ContextState>
-      <ContextState
          contextName = "HomePage.locationManager(_:didUpdateLocations:):HomePage.swift">
          <PersistentStrings>
             <PersistentString
                value = "userLocation?.coordinate.longitude">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomePage.searchBar(_:textDidChange:):HomePage.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomePage.mapView(_:markerInfoWindow:):HomePage.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "marker.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomePage.mapView(_:didTap:):HomePage.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "marker.title">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

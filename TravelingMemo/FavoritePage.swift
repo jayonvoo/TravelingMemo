@@ -8,21 +8,18 @@
 
 import UIKit
 
-struct UserCollectionData {
-    var parkName: String
-    var time: String
-}
-
 class FavoritePage: UITableViewController{
     
-    var dataCollection = [UserCollectionData]()
+    var myObject = GlobalModel()
+    var arrayObject = [StoreGlobalModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataCollection.count
+        
+        return arrayObject.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,9 +28,10 @@ class FavoritePage: UITableViewController{
         let parkTitle = cell.viewWithTag(1) as! UILabel
         let timeLabel = cell.viewWithTag(2) as! UILabel
         
-        parkTitle.text = dataCollection[indexPath.row].parkName
-        timeLabel.text = dataCollection[indexPath.row].time
+        parkTitle.text = arrayObject[indexPath.row].parkName
+        timeLabel.text = arrayObject[indexPath.row].time
         
         return cell
     }
 }
+

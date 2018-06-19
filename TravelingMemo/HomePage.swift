@@ -44,6 +44,7 @@ struct ParkingSpaceData{
 class HomePage: UIViewController{
     
     @IBOutlet weak var mapView: GMSMapView!
+    var myObject = GlobalModel()
     var locationManager = CLLocationManager()
     var searchArray = [String]()
     var gmsFetcher: GMSAutocompleteFetcher!
@@ -61,8 +62,13 @@ class HomePage: UIViewController{
     let window = InfoWindows.createInfoWindows()
     let timePicker = UIDatePicker()
     let toolbar = UIToolbar()
+    let content = UNMutableNotificationContent()
     override func viewDidLoad() {
-        
+     
+        ///System Notification
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
+            
+        })
         
         dataInitializer()
         locationManager.delegate = self
@@ -90,8 +96,6 @@ class HomePage: UIViewController{
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        
         
         let userLocation = locations.last
         //let center = CLLocationCoordinate2D(latitude: (userLocation?.coordinate.latitude)!, longitude: (userLocation?.coordinate.longitude)!)
@@ -239,7 +243,7 @@ class HomePage: UIViewController{
         return false
         
     }
-   
+    
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
         if self.getMarkerPosition != nil{
             let location = self.getMarkerPosition
@@ -254,6 +258,7 @@ class HomePage: UIViewController{
     @objc func directionTap(sender: UIButton!){
         print("Direction Btn Tap!")
     }
+    
     @objc func favoriteBtn(){
         
         timePicker.datePickerMode = .time
@@ -284,18 +289,20 @@ class HomePage: UIViewController{
         timeFormater.timeStyle = .short
         getDidTapTime = timeFormater.string(from: timePicker.date)
         //passFavoriteData.dataCollection.append(UserCollectionData(parkName: getDidTapParkName, time: getDidTapTime))
+        let favoTable = self.tabBarController?.viewControllers![1] as! FavoritePage
+        favoTable.arrayObject.append(StoreGlobalModel(parkName: getDidTapParkName, time: getDidTapTime))
+        
+        favoTable.tableView.reloadData()
+        
+        myObject.parkName = "test01"
+        myObject.time = "0:0"
         
         //passFavoriteData.tableView.reloadData()
         self.timePicker.isHidden = true
         self.toolbar.isHidden = true
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let navVC = segue.destination as? UINavigationController
-        let tableVC = navVC?.viewControllers.first as? FavoritePage
-        
-        tableVC?.dataCollection.append(UserCollectionData(parkName: getDidTapParkName, time: getDidTapTime))
-    }
+    
 }
 
 extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationManagerDelegate, UISearchResultsUpdating{
@@ -319,6 +326,7 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
         searchTableList.getMapView = self.mapView
         self.present(searchController, animated: true, completion: nil)
         
+        
     }
     
     ///篩選文字
@@ -331,15 +339,15 @@ extension HomePage: UISearchControllerDelegate, UISearchBarDelegate, CLLocationM
     ///選取和標記地圖
     func didSelectParkName(_ name: String, _ latitude: Double, _ longitude: Double, _ passMapView: GMSMapView){
         
-        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 15)
-        self.mapView = passMapView
-        self.mapView.camera = camera
-        self.mapView.clear()
-        let position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let marker = GMSMarker(position: position)
-        marker.title = name
-        marker.map = mapView
-        
+         let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 15)
+         self.mapView = passMapView
+         self.mapView.camera = camera
+         self.mapView.clear()
+         let position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+         let marker = GMSMarker(position: position)
+         marker.title = name
+         marker.map = mapView
+ 
     }
 }
 

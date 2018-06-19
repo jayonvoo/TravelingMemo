@@ -17,6 +17,8 @@
 		FC26908B2085A39900F1BF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */; };
 		FC2690962085A39900F1BF69 /* TravelingMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690952085A39900F1BF69 /* TravelingMemoTests.swift */; };
 		FC2690A12085A39900F1BF69 /* TravelingMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */; };
+		FC3497BB20D897E600CA8948 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3497BA20D897E600CA8948 /* RootTabBarController.swift */; };
+		FC3497BD20D89AC100CA8948 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3497BC20D89AC100CA8948 /* GlobalModel.swift */; };
 		FC42C12520D351AB001503F5 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42C12420D351AB001503F5 /* SearchTableView.swift */; };
 		FCFC2E0820D7A99D00C3A4E8 /* InfoWindows.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFC2E0720D7A99D00C3A4E8 /* InfoWindows.xib */; };
 		FCFC2E0A20D7B37300C3A4E8 /* InfoWindows.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC2E0920D7B37300C3A4E8 /* InfoWindows.swift */; };
@@ -58,6 +60,8 @@
 		FC26909C2085A39900F1BF69 /* TravelingMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelingMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2690A02085A39900F1BF69 /* TravelingMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelingMemoUITests.swift; sourceTree = "<group>"; };
 		FC2690A22085A39900F1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3497BA20D897E600CA8948 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		FC3497BC20D89AC100CA8948 /* GlobalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalModel.swift; sourceTree = "<group>"; };
 		FC42C12420D351AB001503F5 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
 		FCFC2E0720D7A99D00C3A4E8 /* InfoWindows.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoWindows.xib; sourceTree = "<group>"; };
 		FCFC2E0920D7B37300C3A4E8 /* InfoWindows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWindows.swift; sourceTree = "<group>"; };
@@ -135,10 +139,12 @@
 				FC2690822085A39300F1BF69 /* ViewController.swift */,
 				FC1FBA1320D23B6F00E0CE74 /* HomePage.swift */,
 				FC1FBA1520D23B9500E0CE74 /* FavoritePage.swift */,
+				FC3497BC20D89AC100CA8948 /* GlobalModel.swift */,
 				FC42C12420D351AB001503F5 /* SearchTableView.swift */,
 				FC2690842085A39400F1BF69 /* Main.storyboard */,
 				FCFC2E0720D7A99D00C3A4E8 /* InfoWindows.xib */,
 				FCFC2E0920D7B37300C3A4E8 /* InfoWindows.swift */,
+				FC3497BA20D897E600CA8948 /* RootTabBarController.swift */,
 				FC2690872085A39900F1BF69 /* Assets.xcassets */,
 				FC2690892085A39900F1BF69 /* LaunchScreen.storyboard */,
 				FC26908C2085A39900F1BF69 /* Info.plist */,
@@ -367,10 +373,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2690832085A39300F1BF69 /* ViewController.swift in Sources */,
+				FC3497BB20D897E600CA8948 /* RootTabBarController.swift in Sources */,
 				FCFC2E0A20D7B37300C3A4E8 /* InfoWindows.swift in Sources */,
 				FC42C12520D351AB001503F5 /* SearchTableView.swift in Sources */,
 				FC1FBA1420D23B6F00E0CE74 /* HomePage.swift in Sources */,
 				FC1FBA1620D23B9500E0CE74 /* FavoritePage.swift in Sources */,
+				FC3497BD20D89AC100CA8948 /* GlobalModel.swift in Sources */,
 				FC1FBA1220D2264A00E0CE74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
